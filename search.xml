@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>使用VsCode以及Github搭建个人图床</title>
+      <link href="/2022/09/03/%E4%BD%BF%E7%94%A8VsCode%E4%BB%A5%E5%8F%8AGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/"/>
+      <url>/2022/09/03/%E4%BD%BF%E7%94%A8VsCode%E4%BB%A5%E5%8F%8AGithub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A/</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用VsCode中的PicGo拓展以及Github搭建个人图床"><a href="#使用VsCode中的PicGo拓展以及Github搭建个人图床" class="headerlink" title="使用VsCode中的PicGo拓展以及Github搭建个人图床"></a>使用VsCode中的PicGo拓展以及Github搭建个人图床</h1><h2 id="下载扩展"><a href="#下载扩展" class="headerlink" title="下载扩展"></a>下载扩展</h2><p>在扩展商店搜索PicGO，安装即可<br><img src="https://raw.githubusercontent.com/jimmy66886/picgo/main/img/20220903174503.png" alt="20220903174503"></p><h2 id="配置扩展"><a href="#配置扩展" class="headerlink" title="配置扩展"></a>配置扩展</h2><ol><li>打开扩展设置<br><img src="https://raw.githubusercontent.com/jimmy66886/picgo/main/img/20220903174625.png" alt="20220903174625"></li><li>在设置中找到Picgo&gt;Pic Bed: Uploader,在其中选中github<br><img src="https://raw.githubusercontent.com/jimmy66886/picgo/main/img/20220903174857.png" alt="20220903174857"></li><li>往上翻，找到Picgo&gt;pic Bed:Current，设置以下属性:<br><img src="https://raw.githubusercontent.com/jimmy66886/picgo/main/img/20220903175111.png" alt="20220903175111"></li></ol><h2 id="踩坑指南"><a href="#踩坑指南" class="headerlink" title="踩坑指南"></a>踩坑指南</h2><p>可能会报服务端异常，这时检查你的Branch，看看是不是写错了，有的是master而不是main<br>cdn加速以后再弄，先这么用着</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在VsCode中集成Git-Bash</title>
       <link href="/2022/09/03/%E5%9C%A8VsCode%E4%B8%AD%E9%9B%86%E6%88%90Git-Bash/"/>
       <url>/2022/09/03/%E5%9C%A8VsCode%E4%B8%AD%E9%9B%86%E6%88%90Git-Bash/</url>
