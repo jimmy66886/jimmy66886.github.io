@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>软件过程模型</title>
+      <link href="/2022/09/09/%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E6%A8%A1%E5%9E%8B/"/>
+      <url>/2022/09/09/%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B%E6%A8%A1%E5%9E%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="常见的软件过程模型"><a href="#常见的软件过程模型" class="headerlink" title="常见的软件过程模型"></a>常见的软件过程模型</h1><h2 id="瀑布模型"><a href="#瀑布模型" class="headerlink" title="瀑布模型"></a>瀑布模型</h2><ul><li>适用：在开发的早期阶段软件需求被完整确定(系统软件等)</li><li>优点:<br>  <img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20220908161127.png" alt="20220908161127"></li><li>缺点：<br>  1. 现实中客户很难明确的描述软件的需求,由于需求无法确定,就无法往下走,无法做软件设计,编码实现也就没法开展<br>  2. 每个阶段都要写大量的相应文档,要花很多精力,增加许多工作量<br>  3. 开发过程中很难响应客户的需求比变更</li><li><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/%E7%80%91%E5%B8%83%E6%A8%A1%E5%9E%8B.png" alt="瀑布模型"></li></ul><h2 id="快速原型模型"><a href="#快速原型模型" class="headerlink" title="快速原型模型"></a>快速原型模型</h2><p>快原型需要迅速建造一个可以运行的软件原型,以便理解和澄清问题,使开发人员与用户达成共识</p><ul><li>目的:减少开发风险和需求的不确定性</li><li>优点:在需求难以表达的时候,可做出一个原型系统,这个原型系统,内部业务处理部分不完全,但功能界面基本是完整的,这样开发人员与客户之间就有了讨论的基础</li><li>缺点:<ul><li>因为是快速做出来的原型系统,内部结构可能会比较乱</li><li>它必须要求开发人员掌握快速原型的开发技术和工具</li></ul></li><li>使用范围<ul><li>小型的,或者中等规模的交互式系统</li><li>大型系统的某些部门,比如说我们常见的界面部分</li><li>生命周期比较短的过渡性软件系统<!-- ![1662617300909](image/软件工程/1662617300909.png) --><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/%E5%BF%AB%E9%80%9F%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%9E%8B.png" alt="快速原型模型"></li></ul></li></ul><h2 id="增量模型"><a href="#增量模型" class="headerlink" title="增量模型"></a>增量模型</h2><ul><li>优点:<ul><li>用户可以不断地,最快的看到软件可运行的中间版本,对于抢占市场入口的软件特别适用</li><li>可以降低开发风险,不全盘铺开,巨额投入,发现风险容易脱身</li></ul></li><li>缺点:<ul><li>需要具备开放的体系结构,才能支持这种不断地增量打补丁开发过程</li><li><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20220908141356.png" alt="20220908141356"></li></ul></li></ul><h2 id="螺旋模型"><a href="#螺旋模型" class="headerlink" title="螺旋模型"></a>螺旋模型</h2><!-- ![1662618357569](image/软件工程/1662618357569.png) --><p><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20220908142559.png" alt="20220908142559"></p><ul><li>使用原型及其他方法来降低风险</li><li>构建原型是一种能使某些类型的风险降至最低的方法<!-- ![1662625590860](image/软件工程/1662625590860.png) --><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20220908162638.png" alt="20220908162638"></li><li>缺点:需要风险评估的经验,没有经验的话是无法发挥其优点的</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件工程模型 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JDBC学习笔记</title>
       <link href="/2022/09/06/JDBC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/2022/09/06/JDBC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
