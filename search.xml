@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>解决Chrome更新异常</title>
+      <link href="/2022/09/18/%E8%A7%A3%E5%86%B3Chrome%E6%9B%B4%E6%96%B0%E5%BC%82%E5%B8%B8/"/>
+      <url>/2022/09/18/%E8%A7%A3%E5%86%B3Chrome%E6%9B%B4%E6%96%B0%E5%BC%82%E5%B8%B8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>Chrome检查更新遇到错误: <strong>“错误代码4:0x80070005-system level”</strong><br><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(164).png" alt="屏幕截图(164)"></p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><ol><li><p>win+r打开运行面板,输入<strong>services.msc</strong><br><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20220918184311.png" alt="20220918184311"></p></li><li><p>找到Google更新服务(gupdate),更改为手动<br><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20220918184510.png" alt="20220918184510"></p><p> <img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20220918185033.png" alt="20220918185033"></p></li></ol><p>完工<br><img src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20220918184730.png" alt="20220918184730"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Chrome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GTA5终于100%完成了</title>
       <link href="/2022/09/14/GTA5%E7%BB%88%E4%BA%8E100-%E5%AE%8C%E6%88%90%E4%BA%86/"/>
       <url>/2022/09/14/GTA5%E7%BB%88%E4%BA%8E100-%E5%AE%8C%E6%88%90%E4%BA%86/</url>
