@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2022/09/03/dUglIbWwaKmC321.jpg">
 <meta property="article:published_time" content="2022-10-21T02:04:38.000Z">
-<meta property="article:modified_time" content="2022-10-23T14:39:27.186Z">
+<meta property="article:modified_time" content="2022-11-03T04:53:10.425Z">
 <meta property="article:author" content="Jimmy">
 <meta property="article:tag" content="个人博客">
 <meta name="twitter:card" content="summary">
@@ -60,7 +60,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2022-10-23 22:39:27'
+  postUpdate: '2022-11-03 12:53:10'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -149,7 +149,7 @@
       }
     }
     detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/style.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/09/02/6rUxGoewvp5hNlB.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 拾光</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/09/03/dUglIbWwaKmC321.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ZZMR</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 拾光</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">N皇后问题-JAVA实现</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-21T02:04:38.000Z" title="发表于 2022-10-21 10:04:38">2022-10-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-10-23T14:39:27.186Z" title="更新于 2022-10-23 22:39:27">2022-10-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="N皇后问题-JAVA实现"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>要求在一个n*n的棋盘上放置n个皇后，使得他们彼此不受攻击<br>按照国际象棋的规则,一个皇后可以攻击与之同一行或者同一列或同一斜线上的任何棋子<br>所以,n皇后问题相当于:<strong>要求在一个nxn的棋盘上放置n个皇后,使得任意两个皇后不在同一行或同一列或同一斜线上</strong></p>
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css" /><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiperstyle.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2022/09/02/6rUxGoewvp5hNlB.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 拾光</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/09/03/dUglIbWwaKmC321.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ZZMR</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 拾光</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">N皇后问题-JAVA实现</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-21T02:04:38.000Z" title="发表于 2022-10-21 10:04:38">2022-10-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-03T04:53:10.425Z" title="更新于 2022-11-03 12:53:10">2022-11-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="N皇后问题-JAVA实现"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>要求在一个n*n的棋盘上放置n个皇后，使得他们彼此不受攻击<br>按照国际象棋的规则,一个皇后可以攻击与之同一行或者同一列或同一斜线上的任何棋子<br>所以,n皇后问题相当于:<strong>要求在一个nxn的棋盘上放置n个皇后,使得任意两个皇后不在同一行或同一列或同一斜线上</strong></p>
 <p>用什么静态代码块,搞不明白了都,害</p>
 <h1 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h1><p>1.首先定义Location类,用于表示棋子位置(二维数组)</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Location</span> &#123;</span><br><span class="line">    <span class="type">int</span> x;<span class="comment">//对应棋盘的行</span></span><br><span class="line">    <span class="type">int</span> y;<span class="comment">//对应棋盘的列</span></span><br><span class="line"></span><br><span class="line">    Location(<span class="type">int</span> x, <span class="type">int</span> y) &#123;</span><br><span class="line">        <span class="built_in">this</span>.x = x;</span><br><span class="line">        <span class="built_in">this</span>.y = y;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;(&quot;</span> + x + <span class="string">&quot;,&quot;</span> + y + <span class="string">&quot;)&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -243,60 +243,7 @@ document.addEventListener('pjax:error', (e) => {
   if (e.request.status === 404) {
     pjax.loadUrl('/404.html')
   }
-})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
-  function butterfly_clock_anzhiyu_injector_config(){
-    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
-    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
-    console.log('已挂载butterfly_clock_anzhiyu')
-    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
-    }
-  var elist = 'null'.split(',');
-  var cpage = location.pathname;
-  var epage = 'all';
-  var qweather_key = '2cd2cee3c77846a1b5c63be458fcc207';
-  var gaud_map_key = '1bccbb72766918b35f82213e0c8e8370';
-  var baidu_ak_key = 'undefined';
-  var flag = 0;
-  var clock_rectangle = '106.8050,33.02';
-  var clock_default_rectangle_enable = 'false';
-
-  for (var i=0;i<elist.length;i++){
-    if (cpage.includes(elist[i])){
-      flag++;
-    }
-  }
-
-  if ((epage ==='all')&&(flag == 0)){
-    butterfly_clock_anzhiyu_injector_config();
-  }
-  else if (epage === cpage){
-    butterfly_clock_anzhiyu_injector_config();
-  }
-  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
-  function butterfly_swiper_injector_config(){
-    var parent_div_git = document.getElementById('recent-posts');
-    var item_html = '<div class="recent-post-item swiper_container_card" style="height: auto;width: 100%"><div id="random"><div id="random-banner"><canvas id="peoplecanvas"></canvas></div><a id="random-hover" style="width:100%;height:auto;" href="javascript:toRandomPost()" rel="external nofollow noreferrer" one-link-mark="yes"><i class="fa fa-paper-plane" style="margin-left:10px"></i><div style="margin-left:10px">随便逛逛<i class="fa-solid fa-arrow-right" style="margin-left:10px"></i></div></a></div><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/10/17/SSM/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20221017163344.png" alt="" onerror="this.src=https://cdn.cbd.int/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-17</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/10/17/SSM/&quot;);" href="javascript:void(0);" alt="">SSM</a><div class="blog-slider__text">SSM入门</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/10/17/SSM/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/18/解决Chrome更新异常/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/微信图片_20220918185414.jpg" alt="" onerror="this.src=https://cdn.cbd.int/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-18</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/18/解决Chrome更新异常/&quot;);" href="javascript:void(0);" alt="">解决Chrome更新异常</a><div class="blog-slider__text">Chrome又出问题啦</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/18/解决Chrome更新异常/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/10/21/N皇后问题-JAVA实现/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://s2.loli.net/2022/09/03/dUglIbWwaKmC321.jpg" alt="" onerror="this.src=https://cdn.cbd.int/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-21</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/10/21/N皇后问题-JAVA实现/&quot;);" href="javascript:void(0);" alt="">N皇后问题-JAVA实现</a><div class="blog-slider__text">屁人工智能为什么要留算法的作业</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/10/21/N皇后问题-JAVA实现/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/14/GTA5终于100-完成了/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/GTA.png" alt="" onerror="this.src=https://cdn.cbd.int/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/14/GTA5终于100-完成了/&quot;);" href="javascript:void(0);" alt="">GTA5终于100%完成了</a><div class="blog-slider__text">游戏人生</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/14/GTA5终于100-完成了/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
-    console.log('已挂载butterfly_swiper')
-    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
-    }
-  var elist = 'undefined'.split(',');
-  var cpage = location.pathname;
-  var epage = '/';
-  var flag = 0;
-
-  for (var i=0;i<elist.length;i++){
-    if (cpage.includes(elist[i])){
-      flag++;
-    }
-  }
-
-  if ((epage ==='all')&&(flag == 0)){
-    butterfly_swiper_injector_config();
-  }
-  else if (epage === cpage){
-    butterfly_swiper_injector_config();
-  }
-  </script><script defer src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/js/swiper.min.js"></script><script defer data-pjax src="https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper_init.js"></script><script data-pjax src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/people.min.js"></script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
 for(var i = 0;i<arr.length;i++){
     arr[i].classList.add('wow');
     arr[i].classList.add('animate__zoomIn');
@@ -352,4 +299,57 @@ for(var i = 0;i<arr.length;i++){
     arr[i].setAttribute('data-wow-delay', '');
     arr[i].setAttribute('data-wow-offset', '');
     arr[i].setAttribute('data-wow-iteration', '');
-  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --></body></html>
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_clock_anzhiyu_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock_anzhiyu')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var qweather_key = '2cd2cee3c77846a1b5c63be458fcc207';
+  var gaud_map_key = '1bccbb72766918b35f82213e0c8e8370';
+  var baidu_ak_key = 'undefined';
+  var flag = 0;
+  var clock_rectangle = '106.8050,33.02';
+  var clock_default_rectangle_enable = 'false';
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_anzhiyu_injector_config();
+  }
+  </script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax src="https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item swiper_container_card" style="height: auto;width: 100%"><div id="random"><div id="random-banner"><canvas id="peoplecanvas"></canvas></div><a id="random-hover" style="width:100%;height:auto;" href="javascript:toRandomPost()" rel="external nofollow noreferrer" one-link-mark="yes"><i class="fa fa-paper-plane" style="margin-left:10px"></i><div style="margin-left:10px">随便逛逛<i class="fa-solid fa-arrow-right" style="margin-left:10px"></i></div></a></div><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/10/17/SSM/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/20221017163344.png" alt="" onerror="this.src=https://cdn.cbd.int/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-17</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/10/17/SSM/&quot;);" href="javascript:void(0);" alt="">SSM</a><div class="blog-slider__text">SSM入门</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/10/17/SSM/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/18/解决Chrome更新异常/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/微信图片_20220918185414.jpg" alt="" onerror="this.src=https://cdn.cbd.int/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-18</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/18/解决Chrome更新异常/&quot;);" href="javascript:void(0);" alt="">解决Chrome更新异常</a><div class="blog-slider__text">Chrome又出问题啦</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/18/解决Chrome更新异常/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/10/21/N皇后问题-JAVA实现/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://s2.loli.net/2022/09/03/dUglIbWwaKmC321.jpg" alt="" onerror="this.src=https://cdn.cbd.int/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-10-21</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/10/21/N皇后问题-JAVA实现/&quot;);" href="javascript:void(0);" alt="">N皇后问题-JAVA实现</a><div class="blog-slider__text">屁人工智能为什么要留算法的作业</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/10/21/N皇后问题-JAVA实现/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;2022/09/14/GTA5终于100-完成了/&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="https://gcore.jsdelivr.net/gh/jimmy66886/picgo@main/img/GTA.png" alt="" onerror="this.src=https://cdn.cbd.int/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-09-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;2022/09/14/GTA5终于100-完成了/&quot;);" href="javascript:void(0);" alt="">GTA5终于100%完成了</a><div class="blog-slider__text">游戏人生</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;2022/09/14/GTA5终于100-完成了/&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/js/swiper.min.js"></script><script defer data-pjax src="https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper_init.js"></script><script data-pjax src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/people.min.js"></script><script async src="/anzhiyu/random.js"></script><!-- hexo injector body_end end --></body></html>
