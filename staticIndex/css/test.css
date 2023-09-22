@@ -1,0 +1,20 @@
+h1{
+    color: green;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.change{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    border-radius: 20%;
+}
+
+.dogBox{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

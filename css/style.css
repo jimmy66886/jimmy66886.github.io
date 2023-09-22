@@ -1,0 +1,17 @@
+/* 鼠标样式 */
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/default.cur),
+      default;
+  }
+  a,
+  img {
+    cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/pointer.cur),
+      default;
+  }
+
+
+.loading-img {
+    background: url(https://jsd.anzhiy.cn/npm/anzhiyu-blog@2.1.1/img/avatar.webp) no-repeat center center;
+    background-size: cover;
+}
+
