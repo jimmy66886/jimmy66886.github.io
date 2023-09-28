@@ -31,3 +31,6 @@ pre code {
 
 
 
+#sidebar #sidebar-menus > .avatar-img {
+    display: none;
+}
