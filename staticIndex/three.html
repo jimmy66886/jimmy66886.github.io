@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: #F4F4F4;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+
+        .head {
+            border-radius: 10px;
+            height: 100px;
+            background-color: #00C0C0;
+            font-size: 40px;
+            text-align: center;
+            line-height: 100px;
+            letter-spacing: 10px;
+            color: red;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .result {
+            margin-left: 65px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">三角形判定器</div>
+        <div class="main">
+            <div class="inputs">
+                输入三角形三条边长 <br>
+                a: <input type="text"><br>
+                b: <input type="text"><br>
+                c: <input type="text"><br>
+            </div>
+            <div class="buttons">
+                <button class="padding"">判定</button><button>退出</button>
+            </div>
+        </div>
+
+        <br>
+            <div class=" result">
+                    <span>输出判定结果</span> <br>
+                    <input type=" text">
+            </div>
+        </div>
+
+        <script>
+
+            let padding = document.querySelector('.padding')
+            padding.addEventListener('click', () => {
+                let a = document.querySelectorAll('input')
+
+                let v1 = +a[0].value
+                let v2 = +a[1].value
+                let v3 = +a[2].value
+
+                if (v1 < 0 || v2 < 0 || v3 < 0 || v1 > 65535 || v2 > 65535 || v3 > 65535) {
+                    a[3].value = "不能"
+                } else {
+
+                    if (v1 + v2 > v3 && v1 + v3 > v2 && v2 + v3 > v1) {
+                        a[3].value = "能"
+                    } else {
+                        a[3].value = "不能"
+                    }
+                }
+
+
+            })
+        </script>
+</body>
+
+</html>
