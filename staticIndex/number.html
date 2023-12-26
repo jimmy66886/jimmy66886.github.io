@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>抽号器</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #result {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>抽号器</h1>
+  <button onclick="drawNumber()">抽取号码</button>
+  <div id="result"></div>
+
+  <script>
+    function drawNumber() {
+      // 生成1到64的随机整数
+      var randomNumber = Math.floor(Math.random() * 64) + 1;
+
+      // 显示抽取的号码
+      document.getElementById("result").innerHTML = "抽取的号码是：" + randomNumber;
+    }
+  </script>
+</body>
+</html>
